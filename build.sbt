@@ -25,4 +25,10 @@ lazy val scala3 = (project in file("scala3"))
                 scalaVersion := "3.1.0"
             )
 
+lazy val applications = (project in file("applications"))
+            .settings(
+                name := "applications",
+                scalaVersion := "2.12.15"
+            )
+
 ThisBuild / exportJars := true
